@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Rubik+Beastly&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Rubik+Beastly&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Rubik+Beastly&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akronim&family=Inconsolata:wght@200&family=Rubik+Beastly&family=Russo+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  font-family: "Rubik Beastly", cursive;
+  font-family: "Inconsolata", monospace;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  box-sizing: border-box;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3475ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 25%;
+  object-fit: cover;
+}
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+.banner .content h2 {
+  color: #fff;
+  font-size: 60px;
+  /* font-family: 'Rubik Beastly';*/
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.banner .content p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Abril Fatface", cursive;
+}
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.banner header .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 34px;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1.5px;
+    /* border-bottom: 2px solid white; */
+    border-radius: 5px;
+}
+.banner header .toggle {
+  background: url(Data/toggle.png);
+  position: relative;
+  width: 36px;
+  height: 30px;
+  cursor: pointer;
+  background-size: cover;
+}
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.about .contentBx {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+}
+.heading {
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+}
+.about .imgBx {
+  background: url(Data/window.jpg);
+  background-size: cover;
+  width: 50%;
+  background-position: center;
+}
+.services {
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+}
+.services .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.services .container .serviceBx
+{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .container .serviceBx img
+{
+    max-width: 100px;
+}
+.services .container .serviceBx h2
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+}
+.technology
+{
+    width: 100%;
+    background: #3f8ffc;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technology .contentBx
+{
+    max-width: 650px;
+}
+.technology .imgBx
+{
+    max-width: 250px;
+}
+.technology .imgBx img
+{
+    max-width: 100%;
+}
+.client
+{
+    background: #162c3b;
+    text-align: center;
+    padding: 100px;
+}
+.client .imgBx
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+.client .imgBx img
+{
+    max-width: 200px;
+    margin: 20px;
+    opacity: .29;
+    cursor: pointer;
+}
+.client .imgBx img:hover
+{
+    opacity: 1;
+}
+.testimonials
+{
+    position: relative;
+    padding: 100px;
+    background: #12222d;
+    text-align: center;
+}
+.testimonials .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.testimonials .container .contentBx
+{
+  background: white;
+  padding: 60px 50px;
+  width: 450px;
+  margin: 10px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .container .contentBx p
+{
+  font-style: italic;
+}
+.testimonials .container .contentBx h3
+{
+  width: 100%;
+  text-align: end;
+  font-weight: 1000;
+  color: #3f8ffc;
+}
+.contact
+{
+  padding: 100px;
+  background: #162c3b;
+  text-align: center;
+}
+.imgBx2
+{
+  background: url(Data/bg2.jpg);
+  background-size: cover;
+  width: 50%;
+  background-position: center;
+}
+.redBg
+{
+  background: url(Data/red.jpg) !important;
+  background-size: cover;
+  width: 50%;
+  background-position: center;
+}
+.form .inputBx
+{
+  margin-bottom: 40px;
+}
+.form .inputBx input
+{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.form .inputBx input::placeholder
+{
+  color: white;
+}
+.form .inputBx textarea
+{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 0;
+  font-size: 18px;
+  min-height: 150px;
+  font-weight: 300;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.form .inputBx textarea::placeholder
+{
+  color: white;
+}
+.form .inputBx input[type="submit"]
+{
+  width: 150px;
+  background: white;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.form .inputBx input[type="submit"]:hover
+{
+  color: rgb(255, 0, 0);
+}
+.footer
+{
+  background: #162c3b;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul li
+{
+  list-style: none;
+}
+.footer ul li a
+{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 15px;
+}
+.footer ul li a img
+{
+  max-width: 20px;
+  filter: invert(1);
+}
+
+
+
+
+
+@media(max-width: 880px)
+{
+  .banner
+  {
+    padding: 50px;
+  }
+  .banner .toggle
+  {
+    display: none;
+  }
+  .banner header
+  {
+    border: none;
+  }
+  .banner .logo
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .content
+  {
+    margin-top: 140px;
+    padding: 10px;
+  }
+  .banner .content h2
+  {
+    font-size: 39px;
+    margin-bottom: 30px;
+  }
+  .banner .content p
+  {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .about
+  {
+    flex-direction: column;
+  }
+  .about .contentBx,
+  .about .imgBx
+  {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+  }
+  .services
+  {
+    padding: 50px;
+  }
+  .services .container
+  {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .services .container .serviceBx
+  {
+    width: 250px;
+    height: 300px;
+  }
+  .technology
+  {
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .technology .imgBx
+  {
+    margin-top: 40px;
+    width: 200px;
+  }
+  .client
+  {
+    padding: 50px;
+  }
+  .client .imgBx
+  {
+    justify-content: center ;
+  }
+  .testimonials
+  {
+    padding: 50px;
+  }
+  .testimonials .contentBx
+  {
+    padding: 60px 40px;
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+  .testimonials .container
+  {
+    margin: auto;
+  }
+  .testimonials .contentBx:last-child
+  {
+    margin-bottom: 0px;
+  }
+  .testimonials .container .contentBx
+  {
+    padding: 30px 25px;
+  }
+  .contact
+  {
+    padding: 50px;
+  }
+  .footer
+  {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  .footer ul
+  {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+@media(max-width:310px)
+{
+  .banner header .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1.1px;
+    /* border-bottom: 2px solid white; */
+    border-radius: 5px;
+}
+.banner .content h2{
+  letter-spacing: 1px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.banner .content p{
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+}
